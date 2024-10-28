@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Productivity Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#daily">Daily Planner</a></li>
+                <li><a href="#weekly">Weekly Planner</a></li>
+                <li><a href="#monthly">Monthly Planner</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="daily">
+            <h2>Daily Planner</h2>
+            <div id="daily-tasks">
+                <input type="text" id="new-task" placeholder="Add a new task">
+                <button onclick="addTask()">Add Task</button>
+                <ul id="task-list"></ul>
+            </div>
+        </section>
+
+        <section id="weekly">
+            <h2>Weekly Planner</h2>
+            <div id="weekly-goals">
+                <input type="text" id="new-weekly-goal" placeholder="Add a new goal">
+                <button onclick="addWeeklyGoal()">Add Goal</button>
+                <ul id="weekly-goal-list"></ul>
+            </div>
+        </section>
+
+        <section id="monthly">
+            <h2>Monthly Planner</h2>
+            <div id="monthly-objectives">
+                <input type="text" id="new-monthly-objective" placeholder="Add a new objective">
+                <button onclick="addMonthlyObjective()">Add Objective</button>
+                <ul id="monthly-objective-list"></ul>
+            </div>
+        </section>
+
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="progress-overview">
+                <p>Total tasks completed: <span id="completed-tasks"></span></p>
+                <p>Weekly goals completed: <span id="completed-weekly-goals"></span></p>
+                <p>Monthly objectives completed: <span id="completed-monthly-objectives"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
