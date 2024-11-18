@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>
+RESUME
+</title>
+<div id="main">
+	<div class="photo-placeholder">
+                <p>Paste Photo Here</p>
+        </div>
+</div>
+<h2>
+<center>
+<h2><b>
+SURANJANA S
+</b></h2>
+</center>
+</h7>
+<h3>
+<center>
+<a href="mailto:220701293@rajalakshmi.edu.in">
+MAIL_ID: 220701293@rajalakshmi.edu.in
+</a>
+</center>
+</h3>
+<body>
+<b>
+<h3>
+<b>Personal Details</b>
+</h3>
+<ul style=""><h4>
+<li>Father's Name: Srinivasan Sethuraman</li>
+<li>Age: 19</li>
+<li>DOB: 13-01-2005</li>
+<li>Gender: Female</li>
+<li>Adress:
+<div><li>Flatno./Flatname: 6D, G1, B Block, Sumeru Golden Enclave</li>
+<li>Street/Area: Buddhar street, East Tambaram
+<li>Pincode: 600059</li>
+</div></li>
+<li>Phone Number: 9941835638, 8778765907</li>
+</h4>
+</ul>
+<h3>
+<b>Educational Qualification</b>
+</h3>
+<h4>
+<table>
+<tr>
+<th>  DEGREE  </th>
+<th>  INSTITUTION  </th>
+<th>  YEAR OF PASSING  </th>
+</tr>
+<tr>
+<td>  10  </td>
+<td>  S R D F Vivekananda Vidyala  </td>
+<td>  2020  </td>
+</tr>
+<tr>
+<td>  12  </td>
+<td>  S R D F Vivekananda Vidyala  </td>
+<td>  2022  </td>
+</tr>
+<tr>
+<td>  B.E Computer Science and Engg.  </td>
+<td>  Rajalakshmi Engineering College  </td>
+<td>  2026  </td>
+</tr>
+</table>
+</h4>
+<h3>
+<b>Hobbies</b>
+</h3>
+<h4>
+<ul style="">
+<li>Dancing</li>
+<li>Reading Books</li>
+<li>Watching Movies</li>
+</ul>
+</h4>
+
+<style>
+#main {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 10px;
+        }
+        .photo-placeholder {
+            float: right;
+            width: 150px;
+            height: 200px;
+            border: 2px solid #dddddd;
+            text-align: center;
+            line-height: 200px;
+            color: #cccccc;
+            font-size: 14px;
+            margin: 10px;
+}
+</style>
+</body>
+</html>

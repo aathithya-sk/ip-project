@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE E TIMETABLE</title>
+    <link rel="icon" type="image/x-icon" href="rec logo.jpeg">
+    <style>
+        .header{
+            text-align: center;
+            margin: 0;   
+        }
+        h3{
+            line-height: 20%;
+        }
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  
+        }
+        .red{
+        color: red;
+
+        }
+        
+            .flip {
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  text-align: center;
+        }
+        
+        
+        table  tr td:hover{
+  background-color:rgb(230, 255, 242);
+  }
+
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+
+    <div Class ="header"><h3>RAJALAKSHMI ENGINEERING COLLEGE </h3>
+        <h3>DEPARTMENT OF COMUTER SCIENCE AND TECHNOLOGY</h3>
+        <h3>Time Table for Academic YEAR 2024-2025 (Odd Semester- JUL'24- NOV'24) </h3>
+        
+    </div>
+    <div class="logo">
+        <a href="https://rajalakshmi.org/"  target="_blank"> 
+        <img src="reclogo.png" alt="logo"width="120" height="90" style="position: absolute; top: 40px ; left: 50px;"   >
+    </a>
+    </div>
+
+    <div >
+    <table   style="width: 100%; height: 0.8cm; border-color: aliceblue;">
+        <Tr >
+            <th colspan="10">Year: III CSE</th>
+            <th colspan="10">Sem: V  </th>
+            <th colspan="10">Sec: E </th>
+            <th colspan="10">Wef:10.07.2024</th>
+
+        </Tr>
+    </table>
+    </div>
+
+    <div >
+    <table class="t1" style="width: 100%;">
+       
+  
+        <tr style="height: 1.5cm;">
+            <th colspan="2"><strong>Class Incharge</strong> </th>
+            <th colspan="8"><strong>Class Comittee Chairperson</strong></th>
+            
+            
+        </tr >   
+        <tr style="height: 1.5cm;">
+            <th colspan="2"><strong>Mrs.Anita Ashishdeep</strong> </th>
+            <th colspan="8"><strong>Dr.S.Vinodh Kumar</strong></th>
+        </tr>
+        <tr style="height: 1.4cm;">
+            <th style="width: 5cm;">DAY</th>
+            <th style="width: 4cm;">1<br>8:00-9:00</th>
+            <th style="width: 4cm;">2<br>9:00-9:50</th>
+            <th style="width: 4cm;">9:50-10-10</th>
+            <th style="width: 4cm;">3<br>10:10-11:00</th>
+            <th style="width: 4cm;">4<br>11:00-11:50</th>
+            <th style="width: 4cm;">5/L<br>11:50-12:30/12:40</th>
+            <th style="width: 4cm;">L/5<br>12:30/12:40-1:20</th>
+            <th style="width: 4cm;">6<br>1:20-2:10</th>
+            <th style="width: 4cm;">7<br>2:10-3:00</th>
+        </tr>
+        <tr style="height: 1.4cm;">
+            <td style="text-align: left;"></style><strong>TUESDAY</strong></td>
+            <td colspan="2" ><strong>OAI1903-RPA</strong> <br><div class="red"> <strong>TLGL2</strong> </div></td>
+            
+            <td rowspan="5"><div class="flip"><strong>BREAK</strong></div></td>
+            <td colspan="2"><strong>CS19542 - IP</strong><br>
+                <div class="red"><strong>A 105</strong> </div></td>
+            <td><strong>LUNCH</strong></td>
+            <td><strong>LIB</strong></td>
+            <td colspan="2"><strong>CS19542 / CS19541 - IP / CN LAB</strong> <br>
+                <div class="red"><b>TLFL5 / TLFL3</b> </div></td>
+           
+        </tr>
+
+        <tr style="height: 1.4cm;">
+            <td style="text-align: left;"><strong>WEDNESDAY</strong></td>
+            <td colspan="2"><strong>CS19541 / CS19542 - CN / IP LAB</strong> <BR>
+
+               <div class="red"><b>  TLFL3 / TLFL5</b></div> </td>
+            
+               <td colspan="2"><Strong>CS19542 - IP</Strong><br>
+               <div class="red"><b> A 105</b></div></td>
+               <td><strong>LUNCH</strong></td>
+            <td><strong>CS19501 - TOC</strong> 
+                <div class="red"><b> A 311</b></div></td>
+            <td> <strong>CS19541 - CN</strong> 
+                <diV class="red" ><b>A 311</b>  </diV></td>
+                <td><strong>COUN</strong></td>
+        </tr>
+        <tr style="height: 1.4cm;">
+            <td style="text-align: left;"><strong>THURSDAY</strong></td>
+            <td><strong>CS19501 - TOC</strong>
+                <div class="red"> <b>A 311</b></div></td>
+            <td> <strong>CS19541 - CN</strong> 
+                <diV class="red" ><b> A 311</b></diV></td>
+            <td colspan="2"><strong>GE19521 - Soft Skills-II<strong</td>
+            <td><strong>LUNCH</strong></td>
+            <td ><strong>AI19341 - POAI </strong <br> <div class="red"><strong>A 303</strong> </div>
+            </td>
+            <td colspan="2"><strong>CS19542 / CS19541 - IP / CN LAB</strong><br><div class="red">
+                <b> TLFL5 / TLFL3</b></div></td>
+        </tr>
+
+        <tr style="height: 1.4cm;">
+            <td style="text-align: left;"><strong>FRIDAY</strong></td>
+            
+            
+                <td> <strong>CS19541 - CN</strong> 
+                    <diV class="red" ><b> A 311</b></diV></td>
+                    <td><strong>CS19501 - TOC</strong>
+                        <div class="red"> <b>A 311</b></div></td>
+            <td><strong>LIB</strong></td>
+            <td><STRONG>LUNCH</STRONG></td>
+            <td colspan="2"><strong>CS19541 / AI19341 - CN / POAI LAB</atrong> 
+                <div class="red"><b> TLFL3 / TLGL3</b></div> </td>
+            <td><strong>NPTEL</strong><br>
+               <div><b>A 311</b></div> </td>
+            <td><strong >AI19341 - POAI</strong> <br>
+                <div class="red"><b>A 311</b></div></td>
+            
+        </tr>
+
+        <tr style="height: 1.4cm;">
+            <td style="text-align: left;"><strong>SATURDAY</strong></td>
+            <td><strong >CS19501 - TOC</strong>
+               <div class="red"><b> A 311</b> </div> </td>
+               <td> <strong>AI19341 - POAI</strong> <br> <div class="red"><b>A 311</b> </div></td>
+            <td> <strong>CS19541 - CN
+                </strong><div class="red"><b>A 311</b> </div></td>
+            <td><strong>LUNCH</strong></td>
+            <td colspan="2"><strong>AI19341 / CS19542 - POAI / IP LAB
+                </strong><div class="red"><b> TLGL3 / JL1</b></div></td>
+            <td colspan="2"><strong>OAI1903 - RPA</strong>
+                <div class=" red"><b>TLGL2 </b></div></td>
+        </tr>
+    </table>
+</div>
+    <br>
+    <br>
+    
+<div>
+    <table style="width: 100%;">
+
+        <tr  style="height: 1.4cm;">
+            <th style="WIDTH: 5cm;">COURSE CODE</th>
+            <TH style="WIDTH: 8cm;">COURSE TITLE</TH>
+            <th style="WIDTH: 4cm;">STAFF CODE</th>
+            <th style="WIDTH: 8cm;">STAFF TITLE</th>
+            <TH style="WIDTH: 4cm;">L</TH>
+            <TH style="WIDTH: 4cm;">T</TH>
+            <TH style="width: 4cm;">P</TH>
+            <TH style="width: 4cm;">TUTORIAL/LAB/<BR>ASSISTANT</TH>
+        </tr>
+        <tr style="height: 1.4cm;">
+            <td><strong>CS19501</strong></td>
+            <td style="text-align: left;"><strong>Theory of Computation</strong></td>
+            <td><strong>CS272</strong></td>
+            <td style="text-align: left;"><strong>Mrs.S.Vinothini</strong></td>
+            <td><strong>4</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong> </strong></td>
+        </tr>
+
+    </tr>
+    <tr style="height: 1.4cm;">
+        <td><strong>OAI1903</strong></td>
+        <td style="text-align: left;"><strong>Introduction to Robotics Process Automation</strong></td>
+        <td><strong>IT194  </strong></td>
+        <td style="text-align: left;"><strong>Mrs.U.Farjana</strong></td>
+        <td><strong>0</strong></td>
+        <td><strong>0</strong></td>
+        <td><strong>4</strong></td>
+        <td><strong> </strong></td>
+    </tr>
+
+</tr>
+<tr style="height: 1.4cm;">
+    <td><strong>CS19541</strong></td>
+    <td style="text-align: left;"><strong>Computer Networks</strong></td>
+    <td><strong>CS288</strong></td>
+    <td style="text-align: left;"><strong>Mrs.Anita Ashishdeep</strong></td>
+    <td><strong>4</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong>Mrs.S.Sivagami</strong></td>
+</tr>
+
+</tr>
+<tr style="height: 1.4cm;">
+    <td><strong>CS19542</strong></td>
+    <td style="text-align: left;"><strong>Internet Programming</strong></td>
+    <td><strong>IT03</strong></td>
+    <td style="text-align: left;"><strong>Dr.P.Kumar</strong></td>
+    <td><strong>4</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong>4</strong></td>
+    <td><strong>Mrs.M.Santhiya </strong></td>
+</tr>
+
+<tr style="height: 1.4cm;">
+    <td><strong>AI19341</strong></td>
+    <td style="text-align: left;"><strong>Principles of Artificial Intelligence</strong></td>
+    <td><strong>CS310</strong></td>
+    <td style="text-align: left;"><strong>Mrs.S.Sandhiya Vani</strong></td>
+    <td><strong>3</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong>2</strong></td>
+    <td><strong> </strong></td>
+</tr>
+
+</tr>
+<tr style="height: 1.4cm;" >
+    <td><strong>COUN</strong></td>
+    <td style="text-align: left;"><strong>Counseling Hour</strong></td>
+    <td><strong>CS226 / CS262 / -</strong></td>
+    <td style="text-align: left;"><strong>Mrs.M.Santhiya /<br> Dr.T.Kumaragurubaran / Mr.Raghu</strong></td>
+    <td><strong>1</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong> </strong></td>
+</tr>
+
+</tr>
+<tr style="height: 1.4cm;">
+    <td><strong>NPTEL</strong></td>
+    <td style="text-align: left;"><strong>NPTEL</strong></td>
+    <td><strong>CS314</strong></td>
+    <td style="text-align: left;"><strong>Mrs.B.Deepa </strong></td>
+    <td><strong>1</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong> </strong></td>
+</tr>
+
+<tr style="height: 1.4cm;">
+    <td><strong>LIB</strong></td>
+    <td style="text-align: left;"><strong>Library</strong></td>
+    <td><strong>CS319 / CS308 </strong></td>
+    <td style="text-align: left;"><strong>Mrs.Chettiar Vani (Tue) /<br>
+        Mrs.Aswana Lal (Fri) </strong></td>
+    <td><strong>2</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong> </strong></td>
+</tr>
+
+</tr>
+<tr style="height: 1.4cm;">
+    <td><strong>GE19521</strong></td>
+    <td style="text-align: left;"><strong>Soft Skills-II</strong></td>
+    <td><strong>CS171 </strong></td>
+    <td style="text-align: left;"><strong>Mrs.S.Ponmani</strong></td>
+    <td><strong>2</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong>0</strong></td>
+    <td><strong> </strong></td>
+</tr>
+</div>
+    </table>
+    <br>
+    <br>
+    <br>
+    
+    <div >
+    <table    style="width: 100%;">
+        
+        <th>TIME TABLE INCHARGE </th>
+        <th>TIME TABLE COORDINATOR</th>
+        <th>HOD</th>
+        <th>PRINCIPAL</th>
+    </table>
+</div>
+</body>
+</html>

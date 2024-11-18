@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Name Autocomplete</title>
+</head>
+<body>
+    <h2>Student Name Autocomplete</h2>
+    <label for="studentName">Enter student name:</label>
+    <input type="text" id="studentName" onkeyup="showSuggestions(this.value)" autocomplete="off">
+    <div id="suggestions"></div>
+
+    <script>
+        function showSuggestions(str) {
+            if (str.length === 0) {
+                document.getElementById("suggestions").innerHTML = "";
+                return;
+            }
+
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const suggestions = JSON.parse(xhr.responseText);
+                    displaySuggestions(suggestions);
+                }
+            };
+            xhr.open("GET", `StudentServlet?query=${encodeURIComponent(str)}`, true);
+            xhr.send();
+        }
+
+        function displaySuggestions(suggestions) {
+            const suggestionBox = document.getElementById("suggestions");
+            suggestionBox.innerHTML = "";
+
+            suggestions.forEach(function(suggestion) {
+                const div = document.createElement("div");
+                div.innerText = suggestion;
+                div.onclick = function() {
+                    document.getElementById("studentName").value = suggestion;
+                    suggestionBox.innerHTML = "";
+                };
+                suggestionBox.appendChild(div);
+            });
+        }
+    </script>
+</body>
+</html>

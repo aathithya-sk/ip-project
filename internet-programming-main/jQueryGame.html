@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Game</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    #gameContainer {
+      position: relative;
+      width: calc(100vw - 100px);
+      height: calc(100vh - 200px);
+      border: 2px solid #ccc;
+      overflow: hidden;
+    }
+
+    .bubble {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    #score {
+      font-size: 24px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    #startButton {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="gameContainer">
+    <button id="startButton">Start</button>
+    <div id="score">0</div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      let score = 0;
+      const width = $(window).width() - 100;
+      const height = $(window).height() - 200;
+
+      function getRandomLetter() {
+        const code = Math.floor(Math.random() * 26) + 65;
+        return String.fromCharCode(code);
+      }
+
+      function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      function createBubble() {
+        const letter = getRandomLetter();
+        const bubble = $('<div class="bubble"></div>').text(letter);
+
+        const posX = Math.floor(Math.random() * (width - 50));
+        const posY = Math.floor(Math.random() * (height - 50));
+
+        bubble.css({
+          left: posX + 'px',
+          top: posY + 'px',
+          backgroundColor: getRandomColor()
+        });
+
+        $('#gameContainer').append(bubble);
+
+        setTimeout(() => {
+          bubble.remove();
+        }, 5000);
+      }
+
+      $('#startButton').click(function() {
+        $(this).hide();
+        score = 0;
+        $('#score').text(score);
+        const bubbleInterval = setInterval(createBubble, 1000);
+        setTimeout(() => {
+          clearInterval(bubbleInterval);
+          $('#startButton').show();
+          alert("Game Over! Your score is: " + score);
+        }, 30000);
+      });
+
+      $(document).keypress(function(e) {
+        const key = String.fromCharCode(e.which).toUpperCase();
+        $('.bubble').each(function() {
+          if ($(this).text() === key) {
+            $(this).remove();
+            score += 1;
+            $('#score').text(score);
+            return false;  // Exit the loop after finding the bubble
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
